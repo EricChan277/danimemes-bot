@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  
+    <df-messenger
+  intent="WELCOME"
+  chat-title="BlueSmart"
+  chat-icon="https://cdn.discordapp.com/attachments/821479626995662900/1012586456700690482/unknown.png"
+  agent-id="faea3bb6-8fff-429c-bed0-8013a4b52021"
+  language-code="en"
+  expand="true">
+  
+  </df-messenger>
+    <style>
+    df-messenger {
+    --df-messenger-bot-message: #3EB489;
+    --df-messenger-button-titlebar-color: #3EB489;
+    --df-messenger-chat-background-color: white;
+    --df-messenger-font-color: white;
+    --df-messenger-send-icon: grey;
+    --df-messenger-user-message: #BF40BF;
+ 
+    }
+    </style>
+
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="index.js"></script>
     <title>Danimemes</title>
     <header>
-      hello world
+     
+      
     </header>
   </head>
-  <body></body>
+  <body>
+    hello world
+  </body>
 </html>
