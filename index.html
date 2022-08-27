@@ -5,14 +5,14 @@
     <script src="index.js"></script> 
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <df-messenger
-  intent="WELCOME"
-  chat-title="BlueSmart"
-  chat-icon="https://cdn.discordapp.com/attachments/821479626995662900/1012586456700690482/unknown.png"
-  agent-id="faea3bb6-8fff-429c-bed0-8013a4b52021"
-  language-code="en"
-  expand="true">
-  
-  </df-messenger>
+      intent="WELCOME"
+      chat-title="BlueSmart"
+      chat-icon="https://cdn.discordapp.com/attachments/821479626995662900/1012586456700690482/unknown.png"
+      agent-id="faea3bb6-8fff-429c-bed0-8013a4b52021"
+      language-code="en"
+      expand="true">
+    </df-messenger>
+    
     <style>
     df-messenger {
     --df-messenger-bot-message: #3EB489;
@@ -21,7 +21,6 @@
     --df-messenger-font-color: white;
     --df-messenger-send-icon: grey;
     --df-messenger-user-message: #BF40BF;
- 
     }
     </style>
 
@@ -34,11 +33,12 @@
     <header>
     </header>
   </head>
-  <body>
+  <body class="body">
     <h1>
       Welcome to the Daniel bot.
     </h1>
     <div>You can interact with me using the chatbox in the bottom right.</div>
+    <button class="btn" onclick="DanButton('https://www.facebook.com/daniel.chen.10690')">
       <img src="image/FixedDan.png" alt="Picture of Daniel">
     </button>
     <footer>
