@@ -33,18 +33,20 @@
     <header>
     </header>
   </head>
-  <button onclick="DarkMode()">
-     Dark Mode </button>
+  <button id="lightSwitch" onclick="DarkMode()">
+     Turn off the lights! </button>
   <body id="dModeBody" class="body">
-    <h1 id="descText1">
+    <img src="image/Cyber.gif" alt="Cyberpunk" class="cyberPic">
+    <h1 id="descText1" class="" data-text="Welcome to the Daniel Bot.">
       Welcome to the Daniel bot.
     </h1 >
-    <div id="descText2">You can interact with me using the chatbox in the bottom right.</div>
+    <div id="descText2" class="" data-text="You can interact with me using the chatbox in the bottom right.">You can interact with me using the chatbox in the bottom right.</div>
     <button class="btn" onclick="DanButton('https://www.facebook.com/daniel.chen.10690')">
       <img src="image/FixedDan.png" alt="Picture of Daniel">
     </button>
     <footer id="descText3">
      Built using Google's Dialogflow ES.
+  
     </footer>
   </body>
 </html>
