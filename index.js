@@ -33,9 +33,8 @@ function glitchStyle() {
 function glitchText(){
     
     const lgtDrk = document.getElementById('lightSwitch')
-    let a = 1
     
-    if (a=2){
+    if (lgtDrk.innerHTML=='Turn off the lights!'){
         lgtDrk.innerHTML='Turn on the lights!';
 
     }
