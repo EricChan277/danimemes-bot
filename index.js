@@ -34,13 +34,12 @@ function glitchText(){
     
     const lgtDrk = document.getElementById('lightSwitch')
     
-    if (lgtDrk.innerHTML=='Turn off the lights!'){
-        lgtDrk.innerHTML='Turn on the lights!';
+    if (lgtDrk.innerHTML=='Turn on the lights!'){
+        lgtDrk.innerHTML='Turn off the lights!';
 
     }
     else {
-        lgtDrk.innerHTML='Turn off the lights!';
-        console.log(lgtDrk.innerHTML + 'Off');
+        lgtDrk.innerHTML='Turn on the lights!';
     }
    
 }
