@@ -9,15 +9,21 @@ function glitchStyle() {
     const b1 = 'body';
 
     document.getElementById('descText1').classList.toggle('hero');
+    document.getElementById('descText1').classList.toggle('glitch');
+    document.getElementById('descText1').classList.toggle('layers');
+
     document.getElementById('descText2').classList.toggle('hero');
+    document.getElementById('descText2').classList.toggle('layers');
+    document.getElementById('descText2').classList.toggle('glitch');
+
+    document.getElementById('descText3').classList.toggle('glitch');
     document.getElementById('descText3').classList.toggle('hero');
 
-    document.getElementById('descText1').classList.toggle('glitch');
-    document.getElementById('descText2').classList.toggle('glitch');
-    document.getElementById('descText3').classList.toggle('glitch');
+  
 
-    document.getElementById('descText1').classList.toggle('layers');
-    document.getElementById('descText2').classList.toggle('layers');
+
+
+
     document.getElementById('descText3').classList.toggle('layers');
     
     if (dBody.classList.contains(b2)) {
