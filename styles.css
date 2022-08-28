@@ -2,7 +2,6 @@
     display: flex;
     width: 99%;
     height: 99%;
-    color: black;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -12,4 +11,17 @@
     padding: 1;
     border: none;
     background: none;
+}
+.body2 {
+    display: flex;
+    width: 99%;
+    height: 99%;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text {
+    color: white
 }
