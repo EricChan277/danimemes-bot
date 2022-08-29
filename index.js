@@ -19,11 +19,6 @@ function glitchStyle() {
     document.getElementById('descText3').classList.toggle('glitch');
     document.getElementById('descText3').classList.toggle('hero');
 
-  
-
-
-
-
     document.getElementById('descText3').classList.toggle('layers');
     
     if (dBody.classList.contains(b2)) {
@@ -46,12 +41,20 @@ function glitchText(){
     }
     else {
         lgtDrk.innerHTML='Turn on the lights!';
-    }
-   
+    } 
 }
+
+function cyberBg(){
+    
+    const cyber = document.getElementById('cBg')
+
+    cyber.classList.toggle('cBgHide')
+}
+
 
 function DarkMode(){
     glitchStyle();
     glitchText();
-}
+    cyberBg();
 
+}

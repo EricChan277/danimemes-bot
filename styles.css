@@ -27,12 +27,24 @@
     font-family: sans-serif;
 }
 .cyberPic {
-    visibility: hidden;
     position: absolute;
     background-position: center;
     background-size: cover;
+    width:99%;
+    height:99%;
 }
 
+.cBgHide {
+    visibility: hidden;
+}
+.absolute {
+    position: relative;
+    background-position: center;
+}
+
+footer {
+    height:20px
+}
 /*Glitch Text*/
     .hero {
     font-size: clamp(15px, 5vw, 20px);
