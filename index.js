@@ -38,12 +38,12 @@ function glitchText(){
     
     const lgtDrk = document.getElementById('lightSwitch')
     
-    if (lgtDrk.innerHTML=='Turn on the lights!'){
-        lgtDrk.innerHTML='Turn off the lights!';
+    if (lgtDrk.innerHTML=='Leave Night City'){
+        lgtDrk.innerHTML='Enter Night City';
 
     }
     else {
-        lgtDrk.innerHTML='Turn on the lights!';
+        lgtDrk.innerHTML='Leave Night City';
     } 
 }
 
