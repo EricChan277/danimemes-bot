@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Play-reg';
+    src: url(/Fonts/Play-Regular.ttf);
+}
+
 html {
     height: 100%;
     width: 100%;
@@ -28,8 +33,7 @@ html {
 }
 
 .text {
-    color: white;
-    font-family: sans-serif;
+    font-family:sans-serif
 }
 .cyberPic {
     position: absolute;
@@ -52,12 +56,13 @@ html {
 }
 /*Glitch Text*/
     .hero {
-    font-size: clamp(15px, 5vw, 20px);
+    font-size: clamp(30px, 10vw, 35px);
     line-height: 1;
     display: inline-block;
-    color: #fff;
+    color: #FFEB0B;
     z-index: 2;
     letter-spacing: 10px;
+    font-family: Play-reg;
 
     /* Bright things in dark environments usually cast that light, giving off a glow */
     filter: drop-shadow(0 1px 3px);
