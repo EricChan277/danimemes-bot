@@ -33,6 +33,7 @@ function glitchStyle() {
     }
 }
 
+
 function glitchText(){
     
     const lgtDrk = document.getElementById('lightSwitch')
@@ -44,6 +45,20 @@ function glitchText(){
     else {
         lgtDrk.innerHTML='Turn on the lights!';
     } 
+}
+
+/* 欢迎来到丹尼尔机器人 */
+function glitchText2() {
+    let descT1T = document.getElementById('descText1');
+    let descT1D = descT1T.getAttribute('data-text');
+
+    if (descT1T.innerHTML==='Welcome to the Daniel bot.'){
+        descT1T.innerHTML='欢迎来到丹尼尔机器人';
+        descT1D='欢迎来到丹尼尔机器人';
+    } else {
+        descT1T.innerHTML='Welcome to the Daniel bot.';
+        descT1D='Welcome to the Daniel bot.';
+    }
 }
 
 function cyberBg(){
@@ -58,5 +73,5 @@ function DarkMode(){
     glitchStyle();
     glitchText();
     cyberBg();
-
+    glitchText2();
 }
