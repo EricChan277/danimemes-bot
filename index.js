@@ -69,9 +69,26 @@ function cyberBg(){
 }
 
 
+
+function playAudio(){
+    let fadeAudio = document.getElementById('fade');
+
+    if (fadeAudio.paused==true){
+        fadeAudio.play();
+        console.log('Playing');
+    }
+    else {
+        fadeAudio.pause();
+        console.log('Paused');
+    }
+}
+
+
 function DarkMode(){
     glitchStyle();
     glitchText();
     cyberBg();
     glitchText2();
+    playAudio();
+
 }
