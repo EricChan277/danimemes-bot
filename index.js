@@ -75,11 +75,9 @@ function playAudio(){
 
     if (fadeAudio.paused==true){
         fadeAudio.play();
-        console.log('Playing');
     }
     else {
         fadeAudio.pause();
-        console.log('Paused');
     }
 }
 
