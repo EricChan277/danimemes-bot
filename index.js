@@ -22,6 +22,8 @@ function glitchStyle() {
     document.getElementById('descText3').classList.toggle('glitch');
     document.getElementById('descText3').classList.toggle('hero');
     document.getElementById('descText3').classList.toggle('layers');
+    document.getElementById('descText3').classList.toggle('cBgHide');
+
     
     if (dBody.classList.contains(b2)) {
         document.getElementById('dModeBody').classList.remove('body2');
@@ -39,11 +41,26 @@ function glitchText(){
     const lgtDrk = document.getElementById('lightSwitch')
     
     if (lgtDrk.innerHTML=='Leave Night City'){
+
         lgtDrk.innerHTML='Enter Night City';
+
+        lgtDrk.classList.remove('button_slide2');
+        lgtDrk.classList.remove('slide_right2');
+
+        lgtDrk.classList.add('button_slide1');
+        lgtDrk.classList.add('slide_right1');
 
     }
     else {
         lgtDrk.innerHTML='Leave Night City';
+
+        lgtDrk.classList.remove('button_slide1');
+        lgtDrk.classList.remove('slide_right1');
+
+        lgtDrk.classList.add('button_slide2');
+        lgtDrk.classList.add('slide_right2');
+
+
     } 
 }
 
@@ -62,12 +79,10 @@ function glitchText2() {
 }
 
 function cyberBg(){
-    
     const cyber = document.getElementById('cBg')
 
     cyber.classList.toggle('cBgHide')
 }
-
 
 
 function playAudio(){

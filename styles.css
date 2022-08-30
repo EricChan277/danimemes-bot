@@ -45,12 +45,51 @@
     background-position: center;
 }
 
+
 /* .boxfix {
     max-height:20px
 } */
 
-/* Button */ 
-    
+/* Button https://codepen.io/RazorXio/pen/gMaoOW */ 
+    .button_slide1 {
+        color: black;
+        border: 2px solid #FFEB0B;
+        border-radius: 0px;
+        padding: 18px 36px;
+        display: inline-block;
+        font-family: "Lucida Console", Monaco, monospace;
+        font-size: 14px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        box-shadow: inset 0 0 0 0 #FFEB0B;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
+    }
+    .slide_right1:hover {
+        box-shadow: inset 400px 0 0 0 #FFEB0B;
+    }
+
+    .button_slide2 {
+        background-color: black;
+        color: #FFEB0B;
+        border: 2px solid #FFEB0B;
+        border-radius: 0px;
+        padding: 18px 36px;
+        display: inline-block;
+        font-family: "Lucida Console", Monaco, monospace;
+        font-size: 14px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        box-shadow: inset 0 0 0 0 #FFEB0B;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
+    }
+    .slide_right2:hover {
+        color: black;
+        box-shadow: inset 400px 0 0 0 #FFEB0B;
+    }
 
 /*Glitch Text*/
     .hero {
