@@ -76,12 +76,12 @@ function glitchText2() {
         descT1T.innerHTML='欢迎来到丹尼尔机器人';
         descT1D='欢迎来到丹尼尔机器人';
 
-        descT2T.innerHTML='Warning: ようこそ　ダンニエルのボットへ'
-        descT2D='Warning: ようこそ　ダンニエルのボットへ'
+        descT2T.innerHTML='Welcome to Night City';
+        descT2D='Welcome to Night City';
     } else {
         descT1T.innerHTML='Welcome to the Daniel bot.';
         descT1D='Welcome to the Daniel bot.';
-        descT2T.innerHTML='You can interact with me using teh chatbox in the bottom right.'
+        descT2T.innerHTML='You can interact with me using the chatbox in the bottom right.'
         descT2D='You can interact with me using the chatbox in the bottom right.'
     }
 }
