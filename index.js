@@ -110,7 +110,7 @@ function playAudio(){
 function DarkMode(){
     glitchStyle();
     glitchText();
-    cyberBg();
+/*     cyberBg(); */
     glitchText2();
     playAudio();
 
