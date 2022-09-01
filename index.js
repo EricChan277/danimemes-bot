@@ -69,19 +69,29 @@ function glitchText2() {
     let descT1T = document.getElementById('descText1');
     let descT1D = descT1T.getAttribute('data-text');
 
+    let descT2T = document.getElementById('descText2');
+    let descT2D = descT2T.getAttribute('data-text');
+
     if (descT1T.innerHTML==='Welcome to the Daniel bot.'){
         descT1T.innerHTML='欢迎来到丹尼尔机器人';
         descT1D='欢迎来到丹尼尔机器人';
+
+        descT2T.innerHTML='Warning: ようこそ　ダンニエルのボットへ'
+        descT2D='Warning: ようこそ　ダンニエルのボットへ'
     } else {
         descT1T.innerHTML='Welcome to the Daniel bot.';
         descT1D='Welcome to the Daniel bot.';
+        descT2T.innerHTML='You can interact with me using teh chatbox in the bottom right.'
+        descT2D='You can interact with me using the chatbox in the bottom right.'
     }
 }
 
 function cyberBg(){
     const cyber = document.getElementById('cBg')
+    const dune = document.getElementById('dune')
 
     cyber.classList.toggle('cBgHide')
+    dune.classList.toggle('cBgHide')
 }
 
 

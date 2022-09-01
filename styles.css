@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Play-reg';
-    src: url(/Fonts/Play-Regular.ttf);
+    src: url(/fonts/Play-Regular.ttf);
 }
 
 .body {
@@ -9,6 +9,11 @@
     justify-content: center;
     flex-direction: column;
     padding: 10px;
+    background-image: url('https://dunenovels.com/wp-content/uploads/2020/11/WindsofDune-2.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .btn {
@@ -23,6 +28,10 @@
     justify-content: center;
     flex-direction: column;
     padding: 10px;
+    background-image: url('image/Cyber.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .text {
@@ -40,6 +49,11 @@
 .cBgHide {
     visibility: hidden;
 }
+
+.dunePic {
+    
+}
+
 .absolute {
     position: relative;
     background-position: center;
