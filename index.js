@@ -95,8 +95,6 @@ function glitchText2() {
     }
 
 
-
-
 function playAudio(){
     let fadeAudio = document.getElementById('fade');
 
@@ -108,6 +106,13 @@ function playAudio(){
     }
 }
 
+function vacation () {
+    let dan1 = document.getElementById('dan1');
+    let dan2 = document.getElementById('dan2');
+
+    dan1.classList.toggle('danPicTog');
+    dan2.classList.toggle('danPicTog');
+}
 
 function DarkMode(){
     glitchStyle();
@@ -115,5 +120,6 @@ function DarkMode(){
 /*     cyberBg(); */
     glitchText2();
     playAudio();
+    vacation();
 
 }

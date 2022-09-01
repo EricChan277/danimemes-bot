@@ -10,6 +10,9 @@
     }
 
 
+footer {
+    margin-top: 10px;
+}
 
 .body {
     display: flex;
@@ -28,6 +31,10 @@
     padding: 1;
     border: none;
     background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .body2 {
     display: flex;
@@ -46,6 +53,7 @@
 
 .text {
     font-family:Dune;
+    padding: 5px;
 }
 
 .cyberPic {
@@ -65,6 +73,20 @@
     position: relative;
     background-position: center;
 }
+
+.fullDan {
+    height: 100%;
+}
+
+.smile {
+    visibility: visible;
+}
+
+.danPicTog {
+    visibility: hidden;
+    width: 0;
+}
+
 
 /* Button https://codepen.io/RazorXio/pen/gMaoOW */ 
     .button_slide1 {
@@ -591,11 +613,20 @@
 /* Mobile breakpoints */
     @media only screen and (max-width: 768px) {
 
-    .hero {
-        letter-spacing: 0px;
-        }
+        .hero {
+            letter-spacing: 0px;
+            }
 
-    .body2 {
-        padding: 0;
+        .body2 {
+            padding: 0;
+        }
+        .smile {
+            width: 100%;
+            padding-top: 60%;
+        }
+/*         .fullDan {
+            visibility: hidden;
+            width: 0;
+        } */ */
+        
     }
-}
