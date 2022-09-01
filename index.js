@@ -1,7 +1,7 @@
 function DanButton(url) {
     window.open(url, '_blank').focus
 }
-// Glitch Styling
+//Glitch Styling
     function glitchStyle() {
 
         const dBody =  document.getElementById('dModeBody')
@@ -46,16 +46,18 @@ function DanButton(url) {
 
             lgtDrk.classList.remove('button_slide2');
             lgtDrk.classList.remove('slide_right2');
+            lgtDrk.classList.add('btnGlitch');
 
-            lgtDrk.classList.add('button_slide1');
-            lgtDrk.classList.add('slide_right1');
+            /* lgtDrk.classList.add('button_slide1');
+            lgtDrk.classList.add('slide_right1'); */
 
         }
         else {
             lgtDrk.innerHTML='Back to Arrakis';
 
-            lgtDrk.classList.remove('button_slide1');
-            lgtDrk.classList.remove('slide_right1');
+           /*  lgtDrk.classList.remove('button_slide1');
+            lgtDrk.classList.remove('slide_right1'); */
+            lgtDrk.classList.remove('btnGlitch');
 
             lgtDrk.classList.add('button_slide2');
             lgtDrk.classList.add('slide_right2');
@@ -72,26 +74,26 @@ function DanButton(url) {
     }
 
 //Glitch Text Content
-function glitchText2() {
-    let descT1T = document.getElementById('descText1');
-    let descT1D = descT1T.getAttribute('data-text');
+    function glitchText2() {
+        let descT1T = document.getElementById('descText1');
+        let descT1D = descT1T.getAttribute('data-text');
 
-    let descT2T = document.getElementById('descText2');
-    let descT2D = descT2T.getAttribute('data-text');
+        let descT2T = document.getElementById('descText2');
+        let descT2D = descT2T.getAttribute('data-text');
 
-    if (descT1T.innerHTML==='Welcome to the daniel bot.'){
-         descT1T.innerHTML='欢迎来到丹尼尔机器人';
-         descT1D='欢迎来到丹尼尔机器人';
+        if (descT1T.innerHTML==='Welcome to the daniel bot.'){
+            descT1T.innerHTML='欢迎来到丹尼尔机器人';
+            descT1D='欢迎来到丹尼尔机器人';
 
-         descT2T.innerHTML='Welcome to Night City';
-          escT2D='Welcome to Night City';
-        } 
-        else {
-        descT1T.innerHTML='Welcome to the daniel bot.';
-        descT1D='Welcome to the daniel bot.';
-        descT2T.innerHTML='You can interact with me using the chatbox in the bottom right.'
-        descT2D='You can interact with me using the chatbox in the bottom right.'
-        }
+            descT2T.innerHTML='Welcome to Night City';
+            escT2D='Welcome to Night City';
+            } 
+            else {
+            descT1T.innerHTML='Welcome to the daniel bot.';
+            descT1D='Welcome to the daniel bot.';
+            descT2T.innerHTML='You can interact with me using the chatbox in the bottom right.'
+            descT2D='You can interact with me using the chatbox in the bottom right.'
+            }
     }
 
 
