@@ -1,12 +1,12 @@
 /* Fonts */
     @font-face {
         font-family: 'Play-reg';
-        src: url(/fonts/Play-Regular.ttf);
+        src: url(/Fonts/Play-Regular.ttf);
     }
 
     @font-face {
         font-family: 'Dune';
-        src: url(/fonts/Dune_Rise.ttf);
+        src: url(/Fonts/Dune_Rise.ttf);
     }
 
 
