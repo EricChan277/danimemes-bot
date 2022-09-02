@@ -2,34 +2,36 @@
 <html lang="en">
 
   <head>
-    <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script> 
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="index.js"></script>
-    <title>Danimemes</title>
-    <df-messenger
-    intent="WELCOME"
-    chat-title="BlueSmart"
-    chat-icon="https://cdn.discordapp.com/attachments/821479626995662900/1012586456700690482/unknown.png"
-    agent-id="faea3bb6-8fff-429c-bed0-8013a4b52021"
-    language-code="en"
-    expand="true">
-  </df-messenger>
-  
-    <style>
-    df-messenger {
-    --df-messenger-bot-message: #3EB489;
-    --df-messenger-button-titlebar-color: #3EB489;
-    --df-messenger-chat-background-color: white;
-    --df-messenger-font-color: white;
-    --df-messenger-send-icon: grey;
-    --df-messenger-user-message: #BF40BF;
-    }
-    </style>
-
+    <!-- Loading Items -->
+      <link rel="stylesheet" href="styles.css">
+      <script src="index.js"></script> 
+      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <script src="index.js"></script>
+      <title>Danimemes</title>
+    <!-- Google Dialogflow text -->
+      <df-messenger
+        intent="WELCOME"
+        chat-title="BlueSmart"
+        chat-icon="https://cdn.discordapp.com/attachments/821479626995662900/1012586456700690482/unknown.png"
+        agent-id="faea3bb6-8fff-429c-bed0-8013a4b52021"
+        language-code="en"
+        expand="true">
+      </df-messenger>
+    
+      <style>
+      df-messenger {
+      --df-messenger-bot-message: #3EB489;
+      --df-messenger-button-titlebar-color: #3EB489;
+      --df-messenger-chat-background-color: white;
+      --df-messenger-font-color: white;
+      --df-messenger-send-icon: grey;
+      --df-messenger-user-message: #BF40BF;
+      }
+      </style>
+    <!-- Audio -->
     <header>
       <audio id="fade">
         <source src="audio/Cyberpunk 2077 — Never Fade Away by SAMURAI (Refused).mp3" type="audio/mpeg">
@@ -38,23 +40,27 @@
     </header>
   </head>
 
+  
   <body id="dModeBody" class="body">
-    <div class="btnContainer">
-      <div id="lightSwitch" class="absolute btnGlitch" onclick="DarkMode()">
-        Enter Night City 
+    <!-- Dark Mode switch -->
+      <div class="btnContainer">
+        <div id="lightSwitch" class="absolute btnGlitch" onclick="DarkMode()">
+          Enter Night City 
+        </div>
       </div>
-    </div>
 
-    <h1 id="descText1" class="text" data-text="ようこそ　ダンニエルのボットへ">Welcome to the daniel bot.</h1>
-    <div id="descText2" class= "text" data-text="Save us Daniel">You can interact with me using the chatbox in the bottom right.</div>
-    <button class="btn" onclick="DanButton('https://www.facebook.com/daniel.chen.10690')">
-      <img src="image/Cypher.png" class="absolute fullDan danPicTog" id="dan1" alt="Picture of Daniel">
-      <img src="image/DanGlas.png" class="absolute smile" id="dan2" alt="Picture of Daniel">
-      <video autoplay muted loop id="cBg" class="video cBgHide">
-        <source src="image/AcidicInfamousDipper.mp4" type="video/mp4">
-      </video>
-    </button>
-
+    <!-- Main Text -->
+      <h1 id="descText1" class="text" data-text="ようこそ　ダンニエルのボットへ">Welcome to the daniel bot.</h1>
+      <div id="descText2" class= "text" data-text="Save us Daniel">You can interact with me using the chatbox in the bottom right.</div>
+    
+      <!-- Dan Images + Video background -->
+      <button class="btn" onclick="DanButton('https://www.facebook.com/daniel.chen.10690')">
+        <img src="image/Cypher.png" class="absolute fullDan danPicTog" id="dan1" alt="Picture of Daniel">
+        <img src="image/DanGlas.png" class="absolute smile" id="dan2" alt="Picture of Daniel">
+        <video autoplay muted loop id="cBg" class="video cBgHide">
+          <source src="image/AcidicInfamousDipper.mp4" type="video/mp4">
+        </video>
+      </button>
 
     <footer id="descText3" class="text">Chatbot built using Google's Dialogflow.</footer>
 

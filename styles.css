@@ -147,7 +147,7 @@
         box-shadow: inset 400px 0 0 0 #FFEB0B;
     }
 
-/* Glitch Text */
+/* Glitch Text https://codepen.io/mattgrosswork/pen/VwprebG */
     .hero {
     font-size: clamp(30px, 10vw, 35px);
     line-height: 1;
