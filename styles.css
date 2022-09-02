@@ -637,12 +637,14 @@
 
         .body {
             overflow: hidden;
+            margin-top: 100px;
         }
 
         .body2 {
             padding: 0;
             max-width: 100%;
             overflow: hidden;
+            margin-top: 100px;
         }
         .smile {
             width: 100%;
