@@ -24,12 +24,12 @@
             } while (i < 3);
         
         if (dBody.classList.contains(b2)) {
-            document.getElementById('dModeBody').classList.remove('body2');
-            document.getElementById('dModeBody').classList.add('body');
+            dBody.classList.remove(b2);
+            dBody.classList.add(b1);
         }
         else {
-            document.getElementById('dModeBody').classList.remove('body');
-            document.getElementById('dModeBody').classList.add('body2');
+            dBody.classList.remove(b1);
+            dBody.classList.add(b2);
         }
     }
 
@@ -91,14 +91,13 @@
 
             descT2T.innerHTML='Welcome to Night City';
             descT2D='Welcome to Night City';
-
             } 
             else {
             descT1T.innerHTML='Welcome to the daniel bot.';
             descT1D='Welcome to the daniel bot.';
+            
             descT2T.innerHTML='You can interact with me using the chatbox in the bottom right.'
             descT2D='You can interact with me using the chatbox in the bottom right.'
-
             }
     }
     
