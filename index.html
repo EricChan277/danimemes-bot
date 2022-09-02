@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <link rel="stylesheet" href="styles.css">
     <script src="index.js"></script> 
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="index.js"></script>
+    <title>Danimemes</title>
     <df-messenger
-      intent="WELCOME"
-      chat-title="BlueSmart"
-      chat-icon="https://cdn.discordapp.com/attachments/821479626995662900/1012586456700690482/unknown.png"
-      agent-id="faea3bb6-8fff-429c-bed0-8013a4b52021"
-      language-code="en"
-      expand="true">
-    </df-messenger>
-    
+    intent="WELCOME"
+    chat-title="BlueSmart"
+    chat-icon="https://cdn.discordapp.com/attachments/821479626995662900/1012586456700690482/unknown.png"
+    agent-id="faea3bb6-8fff-429c-bed0-8013a4b52021"
+    language-code="en"
+    expand="true">
+  </df-messenger>
+  
     <style>
     df-messenger {
     --df-messenger-bot-message: #3EB489;
@@ -23,33 +29,30 @@
     --df-messenger-user-message: #BF40BF;
     }
     </style>
-
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="index.js"></script>
-    <title>Danimemes</title>
+    
     <header>
       <audio id="fade">
         <source src="audio/Cyberpunk 2077 — Never Fade Away by SAMURAI (Refused).mp3" type="audio/mpeg">
       </audio>
+      
     </header>
   </head>
 
   <body id="dModeBody" class="body">
-<!--     <img src="image/Cyber.gif" alt="Cyberpunk" class="cyberPic cBgHide" id="cBg">
-    <img src="https://dunenovels.com/wp-content/uploads/2020/11/WindsofDune-2.jpg" class="cyberPic" id="dune">
- -->    <div id="lightSwitch" class="absolute btnGlitch" onclick="DarkMode()">
-      Enter Night City </div>
-    <h1 id="descText1" class="text" data-text="ようこそ　ダンニエルのボットへ">Welcome to the daniel bot.</h1 >
+    <div class="btnContainer">
+      <div id="lightSwitch" class="absolute btnGlitch" onclick="DarkMode()">
+        Enter Night City 
+      </div>
+    </div>
+
+    <h1 id="descText1" class="text" data-text="ようこそ　ダンニエルのボットへ">Welcome to the daniel bot.</h1>
     <div id="descText2" class= "text" data-text="Save us Daniel">You can interact with me using the chatbox in the bottom right.</div>
     <button class="btn" onclick="DanButton('https://www.facebook.com/daniel.chen.10690')">
       <img src="image/FixedDan.png" class="absolute fullDan danPicTog" id="dan1" alt="Picture of Daniel">
       <img src="image/DanGlas.png" class="absolute smile" id="dan2" alt="Picture of Daniel">
     </button>
-    <footer id="descText3" class="text">
-     Built using Google's Dialogflow ES.
-    </footer>
+
+    <footer id="descText3" class="text">Built using Google's Dialogflow ES.</footer>
+
   </body>
 </html>

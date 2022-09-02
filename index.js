@@ -1,6 +1,3 @@
-function DanButton(url) {
-    window.open(url, '_blank').focus
-}
 //Glitch Styling
     function glitchStyle() {
 
@@ -35,7 +32,6 @@ function DanButton(url) {
         }
     }
 
-
     function glitchText(){
         
         const lgtDrk = document.getElementById('lightSwitch')
@@ -65,12 +61,21 @@ function DanButton(url) {
 
         } 
     }
-    function cyberBg(){
+
+    /*     function cyberBg(){
         const cyber = document.getElementById('cBg')
         const dune = document.getElementById('dune')
     
         cyber.classList.toggle('cBgHide')
         dune.classList.toggle('cBgHide')
+        } */
+
+    function vacation () {
+        let dan1 = document.getElementById('dan1');
+        let dan2 = document.getElementById('dan2');
+    
+        dan1.classList.toggle('danPicTog');
+        dan2.classList.toggle('danPicTog');
     }
 
 //Glitch Text Content
@@ -81,47 +86,45 @@ function DanButton(url) {
         let descT2T = document.getElementById('descText2');
         let descT2D = descT2T.getAttribute('data-text');
 
-        if (descT1T.innerHTML==='Welcome to the daniel bot.'){
+        if (descT1T.innerHTML=='Welcome to the daniel bot.'){
             descT1T.innerHTML='欢迎来到丹尼尔机器人';
-            descT1D='欢迎来到丹尼尔机器人';
+            descT1D='ようこそ　ダンニエルのボットへ';
 
             descT2T.innerHTML='Welcome to Night City';
-            escT2D='Welcome to Night City';
+            descT2D='Welcome to Night City';
+            
             } 
             else {
             descT1T.innerHTML='Welcome to the daniel bot.';
             descT1D='Welcome to the daniel bot.';
             descT2T.innerHTML='You can interact with me using the chatbox in the bottom right.'
             descT2D='You can interact with me using the chatbox in the bottom right.'
+
             }
     }
-
-
-function playAudio(){
-    let fadeAudio = document.getElementById('fade');
-
-    if (fadeAudio.paused==true){
-        fadeAudio.play();
+    
+//Triggered Functions
+    function DanButton(url) {
+        window.open(url, '_blank').focus
     }
-    else {
-        fadeAudio.pause();
+    
+    function playAudio(){
+        let fadeAudio = document.getElementById('fade');
+
+        if (fadeAudio.paused==true){
+            fadeAudio.play();
+        }
+        else {
+            fadeAudio.pause();
+        }
     }
-}
 
-function vacation () {
-    let dan1 = document.getElementById('dan1');
-    let dan2 = document.getElementById('dan2');
-
-    dan1.classList.toggle('danPicTog');
-    dan2.classList.toggle('danPicTog');
-}
-
-function DarkMode(){
-    glitchStyle();
-    glitchText();
-/*     cyberBg(); */
-    glitchText2();
-    playAudio();
-    vacation();
-
-}
+//Execute functions
+    function DarkMode(){
+        glitchStyle();
+        glitchText();
+        /*     cyberBg(); */
+        vacation();
+        glitchText2();
+        playAudio();
+    }
