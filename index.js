@@ -6,7 +6,6 @@
         const dText2 = document.getElementById('descText2');
         const dText3 = document.getElementById('descText3');
 
-
         const b2 = 'body2';
         const b1 = 'body';
 
@@ -72,8 +71,8 @@
     }
 
     function vacation () {
-        let dan1 = document.getElementById('dan1');
-        let dan2 = document.getElementById('dan2');
+        const dan1 = document.getElementById('dan1');
+        const dan2 = document.getElementById('dan2');
     
         dan1.classList.toggle('danPicTog');
         dan2.classList.toggle('danPicTog');
@@ -110,7 +109,7 @@
     }
     
     function playAudio(){
-        let fadeAudio = document.getElementById('fade');
+        const fadeAudio = document.getElementById('fade');
 
         if (fadeAudio.paused==true){
             fadeAudio.play();
