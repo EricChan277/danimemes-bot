@@ -27,6 +27,7 @@
 
     footer {
         margin-top: 10px;
+        text-align: center;
     }
     
     .btnContainer {
@@ -48,6 +49,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        max-width: 100%;
+        max-height: 100%;
 
     }
     .body2 {
@@ -57,10 +60,12 @@
         justify-content: center;
         flex-direction: column;
         padding: 10px;
-/*         background-image: url('image/Cyber.gif'); */
+    /*  background-image: url('image/Cyber.gif'); */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        max-width: 100%;
+        max-height: 100%;
     }
     .video {
         position: fixed;
@@ -74,16 +79,18 @@
 /* Images */
     .fullDan {
         height: 100%;
+        width: 50%;
     }
 
     .smile {
         visibility: visible;
+        width: 50%;
     }
-
-
 
     .cBgHide {
         visibility: hidden;
+        height: 0;
+        width: 0;
     }
     .cyberPic {
         position: absolute;
@@ -625,6 +632,7 @@
 
         .hero {
             letter-spacing: 0px;
+            font-size: clamp(15px, 10vw, 25px);
         }
 
         .body {
@@ -638,7 +646,7 @@
         }
         .smile {
             width: 100%;
-            padding-top: 37%;
+            padding-top: 50%;
         }
         .btn {
             justify-content: flex-end;
@@ -649,6 +657,17 @@
             right: auto;
             bottom: auto;
             overflow: hidden;
+            min-width: none;
+            min-height: auto;
+            height: 400px;
+            width: 400px;
+        }
+        .fullDan {
+            height: 350px;
+            width: 400px;
+        }
+        footer {
+            font-size: 15px;
         }
     }
 

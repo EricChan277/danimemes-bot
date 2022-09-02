@@ -19,8 +19,7 @@
         document.getElementById('descText3').classList.toggle('glitch');
         document.getElementById('descText3').classList.toggle('hero');
         document.getElementById('descText3').classList.toggle('layers');
-        document.getElementById('descText3').classList.toggle('cBgHide');
-
+        /* document.getElementById('descText3').classList.toggle('cBgHide');*/
         
         if (dBody.classList.contains(b2)) {
             document.getElementById('dModeBody').classList.remove('body2');
