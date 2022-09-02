@@ -2,27 +2,26 @@
     function glitchStyle() {
 
         const dBody =  document.getElementById('dModeBody');
-        const dText1 = document.getElementById('descText1');
-        const dText2 = document.getElementById('descText2');
-        const dText3 = document.getElementById('descText3');
-
         const b2 = 'body2';
         const b1 = 'body';
 
-        dText1.classList.toggle('text');
-        dText1.classList.toggle('hero');
-        dText1.classList.toggle('glitch');
-        dText1.classList.toggle('layers');
-    
-        dText2.classList.toggle('text');
-        dText2.classList.toggle('hero');
-        dText2.classList.toggle('layers');
-        dText2.classList.toggle('glitch');
+        // Adding do while loop to replace individual calls
 
-        dText3.classList.toggle('text');
-        dText3.classList.toggle('glitch');
-        dText3.classList.toggle('hero');
-        dText3.classList.toggle('layers');
+            let result = 'descText';
+            let textNum = ''
+            let i = 0;
+
+            do {
+            i = i + 1;
+            textNum = result + i;
+
+            let dText = document.getElementById(textNum);
+
+            dText.classList.toggle('text');
+            dText.classList.toggle('hero');
+            dText.classList.toggle('glitch');
+            dText.classList.toggle('layers');
+            } while (i < 3);
         
         if (dBody.classList.contains(b2)) {
             document.getElementById('dModeBody').classList.remove('body2');
