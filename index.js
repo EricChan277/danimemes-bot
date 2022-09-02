@@ -62,13 +62,11 @@
         } 
     }
 
-    /*     function cyberBg(){
+    function cyberBg(){
         const cyber = document.getElementById('cBg')
-        const dune = document.getElementById('dune')
     
         cyber.classList.toggle('cBgHide')
-        dune.classList.toggle('cBgHide')
-        } */
+    }
 
     function vacation () {
         let dan1 = document.getElementById('dan1');
@@ -92,7 +90,7 @@
 
             descT2T.innerHTML='Welcome to Night City';
             descT2D='Welcome to Night City';
-            
+
             } 
             else {
             descT1T.innerHTML='Welcome to the daniel bot.';
@@ -123,7 +121,7 @@
     function DarkMode(){
         glitchStyle();
         glitchText();
-        /*     cyberBg(); */
+        cyberBg();
         vacation();
         glitchText2();
         playAudio();

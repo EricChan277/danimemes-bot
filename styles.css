@@ -57,10 +57,18 @@
         justify-content: center;
         flex-direction: column;
         padding: 10px;
-        background-image: url('image/Cyber.gif');
+/*         background-image: url('image/Cyber.gif'); */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+    }
+    .video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
     }
 
 /* Images */
@@ -72,10 +80,8 @@
         visibility: visible;
     }
 
-    .danPicTog {
-        visibility: hidden;
-        width: 0;
-    }
+
+
     .cBgHide {
         visibility: hidden;
     }
@@ -90,6 +96,8 @@
         position: relative;
         background-position: center;
     }
+
+
 
 /* Dune Btn https://codepen.io/RazorXio/pen/gMaoOW */ 
     .button_slide1 {
@@ -617,21 +625,40 @@
 
         .hero {
             letter-spacing: 0px;
-            }
+        }
+
+        .body {
+            overflow: hidden;
+        }
 
         .body2 {
             padding: 0;
+            max-width: 100%;
+            overflow: hidden;
         }
         .smile {
             width: 100%;
-            padding-top: 60%;
+            padding-top: 37%;
         }
-    /*         .fullDan {
-            visibility: hidden;
-            width: 0;
-        } */ 
+        .btn {
+            justify-content: flex-end;
+            max-height: 600px;
+        }
+        .video {
+            position: absolute;
+            right: auto;
+            bottom: auto;
+            overflow: hidden;
+        }
     }
 
+/* Rules */
+    .danPicTog {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+            padding: 0;
+    }
 /* Glitch Btn https://codepen.io/stevenlei/pen/ZEpyBod */
     .btnGlitch, .btnGlitch::after {
         width: 340px;
